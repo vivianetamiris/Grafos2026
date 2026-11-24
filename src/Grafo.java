@@ -39,23 +39,23 @@ public class Grafo<T> {
         }
     }
 
-   /*  public boolean alcance(T origem, T destino) {
+   public boolean alcance(T origem, T destino) {
         visitados = new ArrayList<>();
-        return existeCaminho(____, _______, visitados);
+        return existeCaminho(origem, destino, visitados);
     }
 
     private boolean existeCaminho(T verticeAtual, T destino, ArrayList visitados) {
-        if (verticeAtual == _______) 
+        if (verticeAtual.equals(destino)) 
             return true;
         visitados.add(verticeAtual);
         LinkedList<Aresta> adjacencias = meuGrafo.get(verticeAtual);
         if (adjacencias != null) 
             for (Aresta<T> aresta : adjacencias)
-                if (!visitados.contains(aresta._____) && existeCaminho(aresta._____, destino, visitados))
+                if (!visitados.contains(aresta.getDestino()) && existeCaminho(aresta.getDestino, destino, visitados))
                     return true;
         return false;
     }
-
+    /* 
     public List<T> buscaEmProfundidade(T verticeInicial) {
         visitados = new ArrayList<>();
         explorarDFS(_______, visitados);

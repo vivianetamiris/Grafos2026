@@ -111,11 +111,11 @@ public class App {
                     System.out.print("Digite o vértice de destino: ");
                     int cepDestinoAlcance = scanner.nextInt();
                     Cidade destinoAlcance = cepCidades.get(cepDestinoAlcance);
-                   /* if (grafo.alcance(origemAlcance, destinoAlcance)) {
+                   if (grafo.alcance(origemAlcance, destinoAlcance)) {
                         System.out.println("Há um caminho entre " + origemAlcance + " e " + destinoAlcance);
                     } else {
                         System.out.println("Não há um caminho entre " + origemAlcance + " e " + destinoAlcance);
-                    } */
+                    }
                     break;
                 case 5:
                     System.out.print("Digite o vértice inicial para DFS: ");
